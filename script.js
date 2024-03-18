@@ -14,7 +14,7 @@ var callAPI = (base,exponent)=>{
         redirect: 'follow'
     };
     // make API call with parameters and use promises to get response
-    fetch("Yhttps://3b7y6pb5pl.execute-api.ap-southeast-2.amazonaws.com/dev", requestOptions)
+    fetch("https://3b7y6pb5pl.execute-api.ap-southeast-2.amazonaws.com/dev", requestOptions)
     .then(response => response.text())
     .then(result => alert(JSON.parse(result).body))
     .catch(error => console.log('error', error));
